@@ -116,9 +116,9 @@ public class Snake {
             LOG.info("START");
 
             Map<String, String> response = new HashMap<>();
-            response.put("color", "#888888");
-            response.put("headType", "regular");
-            response.put("tailType", "regular");
+            response.put("color", "#FFD700");
+            response.put("headType", "beluga");
+            response.put("tailType", "curled");
             return response;
         }
 
@@ -145,7 +145,7 @@ public class Snake {
             int choice = new Random().nextInt(possibleMoves.length);
             String move = possibleMoves[choice];
 
-            LOG.info("MOVE {}", move);
+            LOG.info("MOVE {}", "up");
 
             Map<String, String> response = new HashMap<>();
             response.put("move", move);
