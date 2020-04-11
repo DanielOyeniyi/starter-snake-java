@@ -140,10 +140,22 @@ public class Snake {
             }
 
             String[] possibleMoves = { "up", "left"};
-
+			
             // Choose a random direction to move in
             int choice = new Random().nextInt(possibleMoves.length);
             String move = possibleMoves[choice];
+			// GitTest tmp = new GitTest();
+			// tmp.customPrint();
+			try {
+				System.out.println(moveRequest.get("game"));
+			} catch (Exception b) {
+				("something went wrong from the start");
+			}
+			try {
+				System.out.println(moveRequest.get("game").get("id"));
+			} catch (Exception e) {
+				System.out.println("something went wrong");
+			}
 
             LOG.info("MOVE {}", move);
 
