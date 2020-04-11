@@ -140,8 +140,6 @@ public class Snake {
             }
 
             String[] possibleMoves = { "up", "left"};
-			GitTest tmp = new GitTest();
-			tmp.customPrint();
 
             // Choose a random direction to move in
             int choice = new Random().nextInt(possibleMoves.length);
