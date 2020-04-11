@@ -147,9 +147,14 @@ public class Snake {
 			// GitTest tmp = new GitTest();
 			// tmp.customPrint();
 			try {
+				System.out.print(moveRequest.values());
+			} catch (Exception a) {
+				System.out.println("something went wrong with java");
+			}
+			try {
 				System.out.println(moveRequest.get("game"));
 			} catch (Exception b) {
-				("something went wrong from the start");
+				System.out.println("something went wrong from the start");
 			}
 			try {
 				System.out.println(moveRequest.get("game").get("id"));
