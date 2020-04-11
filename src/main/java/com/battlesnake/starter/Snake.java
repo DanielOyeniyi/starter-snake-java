@@ -118,7 +118,7 @@ public class Snake {
             Map<String, String> response = new HashMap<>();
             response.put("color", "#FFD700");
             response.put("headType", "beluga");
-            response.put("tailType", "curled");
+            response.put("tailType", "regular");
             return response;
         }
 
@@ -139,13 +139,15 @@ public class Snake {
                 e.printStackTrace();
             }
 
-            String[] possibleMoves = { "up", "down", "left", "right" };
+            String[] possibleMoves = { "up", "left"};
+			GitTest tmp = new GitTest();
+			tmp.customPrint();
 
             // Choose a random direction to move in
             int choice = new Random().nextInt(possibleMoves.length);
             String move = possibleMoves[choice];
 
-            LOG.info("MOVE {}", "up");
+            LOG.info("MOVE {}", move);
 
             Map<String, String> response = new HashMap<>();
             response.put("move", move);
